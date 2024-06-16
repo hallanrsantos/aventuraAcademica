@@ -34,28 +34,28 @@ main{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+
+    display: flex;
+    align-items: center;
 }
 
 .form-completo{
-    width: 20vw;
+    width: 25vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    left: 8%;
-    top: 19%;
+    margin-left: 10%;
 }
 
 .img-logo-completa{
     width: 70%;
-    margin: 8% 0;
+    margin: 8% 0 5% 0;
     align-self: center;
 }
 
 .titulo{
     font-family: "Press Start 2P", sans-serif;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     align-self: center;
 }
 
@@ -97,7 +97,7 @@ label{
 }
 
 .form_campos_div a{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: #636363;
     
 }
@@ -106,7 +106,7 @@ label{
 }
 
 .form_campos_div_div p{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: #636363;
     margin-left: 5px;
 }
@@ -123,3 +123,32 @@ label{
     text-decoration: none;
 }
 
+
+@media screen and (max-width: 870px){
+    .form-completo{
+        width: 40vw;
+    }
+    
+}
+
+@media screen and (max-width: 560px){
+    main{
+        justify-content: center;
+    }
+
+    .titulo{
+        font-size: 1rem;
+    }
+
+    .form-completo{
+        width: 50vw;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .form-completo{
+        width: 70vw;
+    }
+    
+}
