@@ -20,11 +20,13 @@ body{
 header{
     height: 5vh;
     background: linear-gradient(0.25turn, #6A5ACD, #131127, #000214);
+    display: flex;
+    align-items: center;
 }
 
 .seta-voltar{
-    margin: 0.5% 1%;
     width: 25px;
+    margin-left: 5px;
 }
 
 main{
@@ -125,6 +127,7 @@ label{
 
 
 @media screen and (max-width: 870px){
+
     .form-completo{
         width: 40vw;
     }
@@ -132,6 +135,7 @@ label{
 }
 
 @media screen and (max-width: 560px){
+    
     main{
         justify-content: center;
     }
