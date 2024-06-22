@@ -72,4 +72,18 @@ router.delete('/usuario/:id', async (req, res) => {
     }
 });
 
+router.post('/usuario/login', async (req, res) => {
+    try {
+        const { email, senha } = req.body;
+        const user = await User.findOne({ where: { email } });
+        if (user && await user.validPassword(senha)) {
+            res.status(200).json({ message: 'Login successful', user });
+        } else {
+            res.status(401).json({ error: 'Invalid email or password' });
+        }
+    } catch (error) {
+        res.status(400).json({ error: error.message });
+    }
+});
+
 export default router;
