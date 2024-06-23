@@ -3,13 +3,18 @@
   "version": "1.0.0",
   "type": "module",
   "description": "api desenvolvida para o registro de usuários do Aventura Acadêmica",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2"
-  }
+    "express": "^4.19.2",
+    "sqlite3": "^5.0.2",
+    "sequelize": "^6.6.5",
+    "body-parser": "^1.19.0"
+  },
+  "devDependencies": {},
+  "keywords": []
 }
