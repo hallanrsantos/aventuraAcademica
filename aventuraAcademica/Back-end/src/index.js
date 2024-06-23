@@ -13,7 +13,13 @@ const port = 3000;
 app.get('/', (req, res) => { 
     res.send('Hello World!')
   })
-  
+
+  // Adicionando o método POST #BiaDamasceno
+app.post('/create', (req, res) => {
+  const newData = req.body;
+  console.log('Dados recebidos:', newData);
+  res.status(201).send('Dados criados com sucesso!');
+})
   app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
   })
