@@ -38,6 +38,7 @@ main{
     background-position: center;
 
     display: flex;
+    
     align-items: center;
 }
 
@@ -63,6 +64,7 @@ main{
 
 .titulo strong{
     color: #C09AFF;
+    
 }
 
 .form-campos{
@@ -131,6 +133,15 @@ label{
     .form-completo{
         width: 40vw;
     }
+
+    .form_completo-acesso{
+        width: 40vw;
+    }
+
+    .easterEgg{
+        display: none;
+    }
+
     
 }
 
@@ -148,10 +159,18 @@ label{
         width: 50vw;
         margin-left: 0;
     }
+
+    .form_completo-acesso{
+        width: 50vw;
+        
+    }
 }
 
 @media screen and (max-width: 450px){
     .form-completo{
+        width: 70vw;
+    }
+    .form_completo-acesso{
         width: 70vw;
     }
     
