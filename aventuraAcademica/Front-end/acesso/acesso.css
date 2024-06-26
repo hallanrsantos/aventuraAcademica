@@ -1,0 +1,91 @@
+
+/* acesso */
+
+main{
+    height: 95vh;   
+    background-image: linear-gradient(to left, transparent, black 75%), url('../img/background-img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+}
+
+.div-main{
+    margin: 0% 7%;
+}
+
+.form_completo-acesso{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto{
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 25;
+    text-align: center;
+}
+
+.botoes{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px;
+
+}
+
+.butaoEntrar{
+    width: 120px;
+    height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(to right, #6A5ACD, #AD4989);
+    cursor: pointer;
+}
+
+.linkEntrar{
+    text-decoration: none;
+}
+
+.butaoCadastro{
+
+    text-decoration: none;
+    width: 120px;
+    height: 50px;
+    border-radius: 25px;
+    border: 5px 0px 0px 0px;
+    opacity: 0px;
+    border: 3px solid #FFFFFF;
+    background: #0d1a35;
+}
+
+.linkCadastro{
+    text-decoration: none;
+}
+
+.easterEgg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.easterEgg-img{
+    width: 40%;
+    opacity: 0%;
+}
+
+.easterEgg-img:hover{
+    opacity: 100%;
+}
+
+/* footer{
+    background: linear-gradient(92.63deg, #6A5ACD -22.43%, #000214 73.58%);
+    margin-top: -25px;
+} */
+/* fimAcesso */
