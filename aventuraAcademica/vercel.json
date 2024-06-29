@@ -1,0 +1,6 @@
+{
+  "public": "./Front-end/página de destino",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
