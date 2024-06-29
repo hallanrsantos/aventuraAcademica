@@ -1,5 +1,5 @@
 {
-  "public": "./Front-end/página de destino",
+  "public": "./Front-end",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
